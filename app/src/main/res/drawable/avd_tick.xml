@@ -1,0 +1,32 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="208dp"
+            android:height="188dp"
+            android:viewportWidth="208"
+            android:viewportHeight="188">
+
+            <path
+                android:name="tick"
+                android:pathData="M 50 84.911 C 58.215 96.614 64.88 105.998 70.054 113.218 C 74.47 119.378 76.677 122.459 79.608 123.512 C 81.729 124.275 84.142 124.288 86.271 123.549 C 89.213 122.527 91.48 119.436 96.013 113.254 L 138 56"
+                android:strokeColor="#00AD2E"
+                android:strokeWidth="9"
+                android:trimPathEnd="0"
+                android:strokeLineCap="round"/>
+        </vector>
+    </aapt:attr>
+    <target android:name="tick">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="trimPathEnd"
+                android:duration="500"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+</animated-vector>
